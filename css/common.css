@@ -154,3 +154,18 @@ body{
 #navbarNav{
     flex-direction: column;
 }
+
+a :not(.nav-link){
+    font-weight: bold;
+    color: white;
+}
+
+/*a:hover{*/
+/*    font-weight: bold;*/
+/*    color: white;*/
+/*    text-decoration: underline;*/
+/*}*/
+
+.navbar-collapse {
+    align-items: flex-start;
+}
