@@ -206,16 +206,29 @@
 
             </MenuItem>
             <MenuItem Header="{x:Static resx:GUI.MainForm_Tab_Help}" >
-                <MenuItem Header="{x:Static resx:GUI.MainForm_Tab_Help_Website}" Command="{Binding OpenWinHueWebsiteCommand}" Foreground="Black" >
-                    <MenuItem.Icon>
+                <MenuItem Header="Report an issue..." Command="{Binding ReportWinHueIssueCommand}">
+                    <!--<MenuItem.Icon>
                         <Image Source="/WinHue3;component/Resources/WebSite.png" Height="16"/>
-                    </MenuItem.Icon>
+                    </MenuItem.Icon>-->
+                </MenuItem>
+                <MenuItem Header="Open logs folder..." Command="{Binding OpenWinHueAppDataFolderCommand}">
+                    <!--<MenuItem.Icon>
+                        <Image Source="/WinHue3;component/Resources/WebSite.png" Height="16"/>
+                    </MenuItem.Icon>-->
                 </MenuItem>
                 <MenuItem Header="{x:Static resx:GUI.MainForm_Tab_Help_Forum}" Command="{Binding OpenWinHueSupportCommand}" Foreground="Black">
                     <MenuItem.Icon>
                         <Image Source="/WinHue3;component/Resources/Help.png" Height="16"/>
                     </MenuItem.Icon>
                 </MenuItem>
+                <Separator/>
+                <MenuItem Header="{x:Static resx:GUI.MainForm_Tab_Help_Website}" Command="{Binding OpenWinHueWebsiteCommand}" Foreground="Black" >
+                    <MenuItem.Icon>
+                        <Image Source="/WinHue3;component/Resources/WebSite.png" Height="16"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                
             </MenuItem>
         </Menu>
         <StatusBar x:Name="SbStatusBar" DockPanel.Dock="Bottom" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Grid.Row="2" Margin="0,1,0,0">

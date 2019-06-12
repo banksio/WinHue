@@ -1094,6 +1094,21 @@ namespace WinHue3.MainForm
             Process.Start("https://github.com/Hyrules/WinHue/issues");
         }
 
+        private void ReportWinHueIssue()
+        {
+            Process.Start("https://github.com/hyrules/WinHue/issues/new");
+        }
+
+        private void OpenWinHueLogsFolder()
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string logPath = Path.Combine(path, "WinHue\\log\\");
+            var directory = new DirectoryInfo(logPath);
+            string latestPath = directory.GetFiles().OrderByDescending(f => f.LastWriteTime).First().FullName;
+            Process.Start(logPath);
+            Process.Start(latestPath);
+        }
+
         #endregion
 
         #region APPLICATION_MENU_METHODS

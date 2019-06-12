@@ -332,6 +332,8 @@ namespace WinHue3.MainForm
         //*************** Help ******************************
         public ICommand OpenWinHueWebsiteCommand => new RelayCommand(param => OpenWinHueWebsite());
         public ICommand OpenWinHueSupportCommand => new RelayCommand(param => OpenWinHueSupport());
+        public ICommand ReportWinHueIssueCommand => new RelayCommand(param => ReportWinHueIssue());
+        public ICommand OpenWinHueAppDataFolderCommand => new RelayCommand(param => OpenWinHueLogsFolder());
 
         public ICommand LoadVirtualBridgeCommand => new RelayCommand(param => LoadVirtualBridge());
         
