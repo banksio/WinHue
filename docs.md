@@ -1,13 +1,10 @@
 ---
-title: Features
-layout: features
-oof: hello
-
+title: Documentation
+layout: docs
 ---
 
 # {{ page.title }}
 This is rather funny, isn't it!
-{{ page.oof }}
 
 
 <!--
