@@ -1,13 +1,9 @@
 ---
 title: Features
 layout: features
-oof: hello
-
 ---
 
 # {{ page.title }}
-This is rather funny, isn't it!
-{{ page.oof }}
 
 
 <!--

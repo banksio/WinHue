@@ -8,22 +8,36 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <!-- Magnific Popup CSS -->
-    <link rel="stylesheet" href="../assets/magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="../assets/magnific-popup/popup-styles.css">
+    <link rel="stylesheet" href="/WinHue/assets/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="/WinHue/assets/magnific-popup/popup-styles.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="/WinHue/css/common.css">
+    <link rel="stylesheet" href="/WinHue/css/default.css">
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
     <!-- Page Icons: 1. Chrome and Opera -->
-    <link rel="icon" sizes="192x192" href="../assets/icon.png">
+    <link rel="icon" sizes="192x192" href="/WinHue/assets/icon.png">
     <!-- 2. Safari -->
-    <link rel="apple-touch-icon" href="../assets/icon.png">
+    <link rel="apple-touch-icon" href="/WinHue/assets/icon.png">
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#000000">
   </head>
   <body>
-    {% include navbar.html %}
+    <!-- Heading: Navbar and title -->
+    <!-- As a heading -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">WinHue</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex align-items-end" id="navbarNav">
+            <div class="nav nav-pills flex-row-reverse">
+                <a class="text-sm-center nav-link" href="#">Download</a>
+                <a class="text-sm-center nav-link active" href="#">Features</a>
+                <a class="text-sm-center nav-link" href="/WinHue/">Overview</a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Main Content -->
     <div class="container">
@@ -33,87 +47,35 @@
             </div>
         </div>
 
-        <div class="row row-btm-pad">
+      <div class="row row-btm-pad">
           <div class="col-md-4 col-sm-6">
               <h3>Groups</h3>
               <p>Manage light groups on the bridge, to categorise your lights or just group together multiple lights from one fitting.</p>
               <p>You can also create and edit the rooms that are shown in the official Hue app.</p>
-              <a class="image-link" href="../assets/img/groupCreator.png" data-effect="mfp-zoom-in">
-                  <img src="../assets/img/groupCreator.png"  class="img-fluid" alt="The main window of WinHue.">
+              <a class="image-link" href="/WinHue/assets/img/groupCreator.png" data-effect="mfp-zoom-in">
+                  <img src="/WinHue/assets/img/groupCreator.png"  class="img-fluid" alt="The main window of WinHue.">
               </a>
           </div>
           <div class="col-md-4 col-sm-6">
-              <h3>Schedules</h3>
-              <p>Automate your lights and create scheduled scene transitions.</p>
-              <p>Enable recurrence if you'd like it to repeat, or enable randomisation if you'd like the start time to vary from day to day.</p>
-              <a class="image-link" href="../assets/img/createSchedules.png" data-effect="mfp-zoom-in">
-                  <img src="../assets/img/createSchedules.png"  class="img-fluid" alt="WinHue's schedule creator.">
+              <h3>Rules</h3>
+              <p>Edit rules on the bridge in detail, with an easy to use interface for selecting the rule's parameters. You can even load and edit existing rules without having to start from scratch.</p>
+              <a class="image-link" href="/WinHue/assets/img/ruleCreator.png" data-effect="mfp-zoom-in">
+                  <img src="/WinHue/assets/img/ruleCreator.png"  class="img-fluid" alt="The main window of WinHue.">
               </a>
           </div>
-          <div class="col-md-4 col-sm-6">
-              <h3>Scenes</h3>
-              <p>Save your favourite color patterns and fine tune your lights to exactly how you want them.<p>
-              <p>Import colors from a photo, or completely randomise any light.</p>
-              <a class="image-link" href="../assets/img/createScenes.png" data-effect="mfp-zoom-in">
-                  <img src="../assets/img/createScenes.png"  class="img-fluid" alt="WinHue's scene creator dialog.">
+          <div class="col-md-4">
+              <h3>Floorplan</h3>
+              <p>Create and edit floorplans that match your house. You can import your own images to set up a floorplan that works for you.</p>
+              <a class="image-link" href="/WinHue/assets/img/floorplan.png" data-effect="mfp-zoom-in">
+                  <img src="/WinHue/assets/img/floorplan.png"  class="img-fluid" alt="The main window of WinHue.">
               </a>
           </div>
-            <div class="col-md-4 col-sm-6">
-                <h3>Sensors</h3>
-                <p>Detect changes in your Hue system to add conditions to light rules.</p>
-                <a class="image-link" href="../assets/img/createSensors.png" data-effect="mfp-zoom-in">
-                    <img src="../assets/img/createSensors.png"  class="img-fluid" alt="The main window of WinHue.">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <h3>Rules</h3>
-                <p>Edit rules on the bridge in detail, with an easy to use interface for selecting the rule's parameters. You can even load and edit existing rules without having to start from scratch.</p>
-                <p>Set conditions to control your lights based on a sensor value, and actions to trigger further rules and automations.</p>
-                <a class="image-link" href="../assets/img/ruleCreator.png" data-effect="mfp-zoom-in">
-                    <img src="../assets/img/ruleCreator.png"  class="img-fluid" alt="WinHue's rule creator dialog.">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <h3>Floorplan</h3>
-                <p>Create and edit floorplans that match your home. You can import your own images to set up a floorplan that works for you.</p>
-                <a class="image-link" href="../assets/img/floorplan.png" data-effect="mfp-zoom-in">
-                    <img src="../assets/img/floorplan.png"  class="img-fluid" alt="WinHue's floorplan creator.">
-                </a>
-            </div>
-        </div>
-        <div class="row row-btm-pad">
-            <div class="col-md-12">
-                <div style="text-align: center; margin-top: 1rem;">
-                    <h1>Bridge Control</h1>
-                    <p>WinHue offers advanced bridge control.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row row-btm-pad">
-            <div class="col-md-6">
-                <h3>Bridge Settings Manager</h3>
-                <p>Meticulously control every aspect of your Hue bridge, from network settings to portal connection.</p>
-                <p>Hide objects, perform software updates and see the capabilities of your hardware.</p>
-                <a class="image-link" href="../assets/img/bridgeSettings.png" data-effect="mfp-zoom-in">
-                    <img src="../assets/img/bridgeSettings.png"  class="img-fluid" alt="WinHue's bridge settings window.">
-                </a>
-            </div>
-            <div class="col-md-6">
-                <h3>Bridge User Management</h3>
-                <p>See what is connected to your bridge.</p>
-                <p>See the last time each service was connected, and how old the connection is.</p>
-                <a class="image-link" href="../assets/img/bridgeUsers.png" data-effect="mfp-zoom-in">
-                    <img src="../assets/img/bridgeUsers.png"  class="img-fluid" alt="WinHue's bridge user manager.">
-                </a>
-            </div>
-        </div>
-
+      </div>
     </div>
 
     <footer class="footer">
         <div class="container">
-          <span class="footer-content"><a href="{{ site.github.repository_url }}">{{ site.github.project_title }}</a> is maintained by <a href="{{ site.github.owner_url }}"><img src="{{ site.github.owner_gravatar_url }}"../> {{ site.github.owner_name }}</a>, with help from <a href="{{ site.github.contributors[1].html_url }}"><img src="{{ site.github.contributors[1].avatar_url }}"../> {{ site.github.contributors[1].login }}</a> ({{ site.github.contributors[1].contributions }}), <a href="{{ site.github.contributors[2].html_url }}"><img src="{{ site.github.contributors[2].avatar_url }}"../> {{ site.github.contributors[2].login }}</a> ({{ site.github.contributors[2].contributions }}) and <a href="{{ site.github.repository_url }}/graphs/contributors">others</a>.</span>
+          <span class="footer-content"><a href="{{ site.github.repository_url }}">{{ site.github.project_title }}</a> is maintained by <a href="{{ site.github.owner_url }}"><img src="{{ site.github.owner_gravatar_url }}"/WinHue/> {{ site.github.owner_name }}</a>, with help from <a href="{{ site.github.contributors[1].html_url }}"><img src="{{ site.github.contributors[1].avatar_url }}"/WinHue/> {{ site.github.contributors[1].login }}</a> ({{ site.github.contributors[1].contributions }}), <a href="{{ site.github.contributors[2].html_url }}"><img src="{{ site.github.contributors[2].avatar_url }}"/WinHue/> {{ site.github.contributors[2].login }}</a> ({{ site.github.contributors[2].contributions }}) and <a href="{{ site.github.repository_url }}/graphs/contributors">others</a>.</span>
         </div>
     </footer>
 
@@ -168,8 +130,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script src="../assets/magnific-popup/magnific-popup.js"></script>
-    <script src="../js/common.js"></script>
-    <script src="../js/default.js"></script>
+    <script src="/WinHue/assets/magnific-popup/magnific-popup.js"></script>
+    <script src="/WinHue/js/common.js"></script>
+    <script src="/WinHue/js/default.js"></script>
   </body>
 </html>
